@@ -3,6 +3,10 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+    }
 }
 
 .clients__link {
@@ -17,6 +21,16 @@
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+    width: 210px;
+    height: 92px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+    height: 92px;
+    }
 
     &:hover,
         &:focus {

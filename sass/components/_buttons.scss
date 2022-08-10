@@ -119,18 +119,32 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 30px;
+        }
 }
 
-.btn__item:not(:last-child) {
-    margin-right: 8px;
+.btn__item {
+    @media screen and (max-width: 767px) {
+    padding-bottom: 15px;
+    }   
+    
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    
+        &>.active {
+            color: var(--white-color);
+            background-color: var(--brand-color-blue);
+        }
 }
-
-.btn__item>.active {
-    color: var(--white-color);
-    background-color: var(--brand-color-blue);
-}
-
-
 
 
 // Footer subscribe button

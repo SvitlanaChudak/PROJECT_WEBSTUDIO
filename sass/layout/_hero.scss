@@ -22,6 +22,12 @@
             letter-spacing: 0.06em;
             text-transform: uppercase;
             color: var(--white-color);
+
+            @media screen and (max-width: 1199px) {
+                width: 360px;
+                font-size: 26px;
+                line-height: 1.62;
+            }
         }
 }
 
