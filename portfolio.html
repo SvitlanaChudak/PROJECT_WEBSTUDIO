@@ -27,6 +27,13 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo header__logo" href="./index.html"><span class="color">Web</span>Studio</a>
+
+        <button class="menu__btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#header-menu"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="list nav__list">
             <li class="nav__item">
@@ -40,26 +47,80 @@
             </li>
           </ul>
         </nav>
-        <ul class="list header__contacts">
-          <li class="header__item">
-            <a class="link header__link header__email" href="mailto:info@devstudio.com"
-              ><svg class="header__icon email-icon">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-item">
-            <a class="link header__link header__tel" href="tel:+380961111111"
-              ><svg class="header__icon tel-icon">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <div class="contacts__wrap">
+          <ul class="list header__contacts">
+            <li class="header__item">
+              <a class="link header__link header__email" href="mailto:info@devstudio.com"
+                ><svg class="header__icon email-icon">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="link header__link header__tel" href="tel:+380961111111"
+                ><svg class="header__icon tel-icon">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
+    <!-- Mobile menu -->
+    <div class="menu__overlay" data-menu>
+      <div class="menu__container">
+        <ul class="mobile-nav list">
+          <li class="mobile-nav__item">
+            <a class="link mobile-nav__link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="link mobile-nav__link active" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="link mobile-nav__link" href="#">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a class="link mobile__tel" href="tel:+380961111111"> +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a class="link mobile__email" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-socials list">
+          <li class="mobile-socials__item">
+            <a class="mobile-socials-link link" href="" target="_blank" rel="noopener noreferrer">
+              Instagram <span class="mobile-socials__line">|</span>
+            </a>
+          </li>
+          <li class="mobile-socials__item">
+            <a class="mobile-socials-link link" href="" target="_blank" rel="noopener noreferrer">
+              Twitter <span class="mobile-socials__line">|</span>
+            </a>
+          </li>
+          <li class="mobile-socials__item">
+            <a class="mobile-socials-link link" href="" target="_blank" rel="noopener noreferrer">
+              Facebook <span class="mobile-socials__line">|</span>
+            </a>
+          </li>
+          <li class="mobile-socials__item">
+            <a class="mobile-socials-link link" href="" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+        <button class="mobile-close__btn" type="button" data-menu-close>
+          <svg class="mobile-close-symbol">
+            <use href="./images/icons.svg#mobile-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <!-- Main section -->
 
@@ -409,5 +470,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- JS -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

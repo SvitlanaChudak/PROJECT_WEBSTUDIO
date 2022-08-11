@@ -1,12 +1,17 @@
 
 .footer__contacts {
-    text-align: center;
+    text-align: left;
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: 76px;
         margin-right: 165px;
+        text-align: center;
     }
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
 }
 
 .contacts__address {
