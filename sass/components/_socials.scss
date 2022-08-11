@@ -1,11 +1,24 @@
 .footer__socials {
     margin-left: 70px;
+
+
+@media screen and (max-width: 767px) {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 0;
+        text-align: center;
+        }
 }
+
 
 .socials__call {
     font: var(--main-font);
     font-weight: 700;
-    line-height: 1.14;
+    line-height: 1.17;
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 20px;
