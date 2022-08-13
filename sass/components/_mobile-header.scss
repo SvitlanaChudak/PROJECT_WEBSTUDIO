@@ -92,10 +92,15 @@
      font-weight: 500;
      letter-spacing: 0.02em;
      color: var(--brand-color-blue);
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
     margin-right: 10px;
     padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
  }
+
+    // .mobile-socials-link:not(:last-child) {
+    // border-right: 1px solid rgba(33, 33, 33, 0.2);
+    // }
+ 
 
  .mobile-close__btn {
      position: absolute;
@@ -131,7 +136,7 @@
 
 
 
-// <span class="mobile-socials__line">|</span>
+
 
 
 
