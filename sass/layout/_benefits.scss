@@ -38,6 +38,11 @@
         width: 354px;
     }
 }
+@media screen and (max-width: 767px) {
+                .benefits__item:not(last-child) {
+                    margin-bottom: 30px;
+                }
+            }
 
 .benefits__desc {
     font-size: 14px;
