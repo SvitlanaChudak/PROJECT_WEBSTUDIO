@@ -1608,7 +1608,7 @@ p {
 @media screen and (max-width: 479px) {
   .img__overlay {
     width: 290px;
-    padding: 45px 20px;
+    padding: 35px 35px;
   }
 }
 .portfolio__link:hover .img__overlay, .portfolio__link:focus .img__overlay {
