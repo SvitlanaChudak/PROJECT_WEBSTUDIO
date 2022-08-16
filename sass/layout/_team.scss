@@ -22,34 +22,22 @@
 }
 
 .team__item {
-    width: 270px;
-    height: 428px;
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-@media screen and (max-width: 767px) {
-    width: 450px;
-    height: 622px;
 @media screen and (max-width: 479px) {
-    width: 290px;
-    height: 455px;
     margin-left: auto;
     margin-right: auto;
 }
 }
 
-    &:not(last-child) {
+    &:not(:last-child) {
         @media screen and (max-width: 767px) {
                 margin-bottom: 30px;
             }
     }
 
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            width: 354px;
-            height: 536px;
-        }
-}
 
 .team__card {
     padding-top: 30px;

@@ -354,15 +354,16 @@ p {
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .section__title {
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1046,8 +1047,8 @@ p {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -1055,7 +1056,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  height: auto;
+  height: 400;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img@1x_hero_sm.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img@1x_hero_sm.jpg");
 }
@@ -1081,6 +1082,8 @@ p {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img@1x_hero_lg.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img@1x_hero_lg.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -1165,7 +1168,7 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .benefits__item:not(last-child) {
+  .benefits__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1283,29 +1286,19 @@ p {
 }
 
 .team__item {
-  width: 270px;
-  height: 428px;
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-@media screen and (max-width: 767px) {
-  .team__item {
-    width: 450px;
-    height: 622px;
-  }
-}
 @media screen and (max-width: 767px) and (max-width: 479px) {
   .team__item {
-    width: 290px;
-    height: 455px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (max-width: 767px) {
-  .team__item:not(last-child) {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
