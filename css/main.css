@@ -1546,15 +1546,10 @@ p {
   overflow: hidden;
 }
 
-.img__desc {
+.img__desc { 
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-color);
-}
-@media screen and (max-width: 479px) {
-  .img__desc {
-    font-size: 13px;
-  }
 }
 
 .img__overlay {
@@ -1584,12 +1579,7 @@ p {
     padding: 63px 24px;
   }
 }
-@media screen and (max-width: 479px) {
-  .img__overlay {
-    /* width: 290px; */
-    padding: 35px 35px;
-  }
-}
+
 .portfolio__link:hover .img__overlay, .portfolio__link:focus .img__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);

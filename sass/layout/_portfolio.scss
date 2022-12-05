@@ -98,10 +98,6 @@
      font-size: 18px;
      line-height: 1.56;
      color: var(--white-color);
-
-     @media screen and (max-width: 479px) {
-         font-size: 13px;
-     }
  }
 
  .img__overlay {
@@ -118,12 +114,6 @@
      @media screen and (min-width: 1200px) {
          // width: 370px;
          padding: 63px 24px;
-     }
-
-     @media screen and (max-width: 479px) {
-         // width: 290px;
-         padding: 35px 35px;
-
      }
 
      position: absolute;
