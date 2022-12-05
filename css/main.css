@@ -1544,8 +1544,6 @@ p {
 .img__wrap {
   position: relative;
   overflow: hidden;
-  height: 294px;
-  width: 450px;
 }
 
 .img__desc {
@@ -1561,8 +1559,8 @@ p {
 
 .img__overlay {
   background-color: rgba(33, 150, 243, 0.9);
-  height: 294px;
-  width: 450px;
+  height: 100%;
+  width: 100%;
   padding: 77px 24px;
   position: absolute;
   top: 0;
@@ -1576,19 +1574,19 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .img__overlay {
-    width: 354px;
+    /* width: 354px; */
     padding: 49px 24px 77px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .img__overlay {
-    width: 370px;
+    /* width: 370px; */
     padding: 63px 24px;
   }
 }
 @media screen and (max-width: 479px) {
   .img__overlay {
-    width: 290px;
+    /* width: 290px; */
     padding: 35px 35px;
   }
 }
